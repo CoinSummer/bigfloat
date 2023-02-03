@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ALTree/bigfloat"
+	"github.com/ThreeAndTwo/bigfloat"
 )
 
 const maxPrec uint = 1100

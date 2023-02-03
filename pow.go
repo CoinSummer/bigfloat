@@ -1,13 +1,23 @@
 package bigfloat
 
-import "math/big"
+import (
+	"math"
+	"math/big"
+)
 
 // Pow returns a big.Float representation of z**w. Precision is the same as the one
 // of the first argument. The function panics when z is negative.
 func Pow(z *big.Float, w *big.Float) *big.Float {
 
 	if z.Sign() < 0 {
-		panic("Pow: negative base")
+		// z 值为负数，转为 float64
+		zz, _ := z.Float64()
+		if zz < 0 {
+			ww, _ := w.Float64()
+
+			x := new(big.Float)
+			return x.SetFloat64(math.Pow(zz, ww))
+		}
 	}
 
 	// Pow(z, 0) = 1.0

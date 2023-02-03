@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ALTree/bigfloat"
+	"github.com/ThreeAndTwo/bigfloat"
 )
 
 // See note in sqrt_test.go about which numbers

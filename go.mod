@@ -1,3 +1,3 @@
-module github.com/ALTree/bigfloat
+module github.com/ThreeAndTwo/bigfloat
 
 go 1.15

@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ALTree/bigfloat"
+	"github.com/ThreeAndTwo/bigfloat"
 )
 
 func TestExp(t *testing.T) {
@@ -100,6 +100,17 @@ func TestExpSpecialValues(t *testing.T) {
 			t.Errorf("Log(%f) =\n got %g (%s);\nwant %g (Exact)", f, x64, acc, want)
 		}
 	}
+}
+
+func TestExp2(t *testing.T) {
+	quarter := math.Pow(-2, -2)
+	fmt.Printf("%f\n", quarter) // 0.250000
+
+	bigneg2 := big.NewFloat(1.00004167843624).SetPrec(1e5)
+	bigneg3 := big.NewFloat(365).SetPrec(1e5)
+	bigquarter := bigfloat.Pow(bigneg2, bigneg3) // PANIC!  Pow: negative base
+	_a, _ := bigquarter.Float64()
+	fmt.Printf("%f\n", (_a-1)*100)
 }
 
 // ---------- Benchmarks ----------
