@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ThreeAndTwo/bigfloat"
+	"github.com/CoinSummer/bigfloat"
 )
 
 // See note in sqrt_test.go about which numbers

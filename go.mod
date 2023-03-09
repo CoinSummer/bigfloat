@@ -1,3 +1,4 @@
-module github.com/ThreeAndTwo/bigfloat
+module github.com/CoinSummer/bigfloat
 
-go 1.15
+go 1.18
+

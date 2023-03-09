@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ThreeAndTwo/bigfloat"
+	"github.com/CoinSummer/bigfloat"
 )
 
 const maxPrec uint = 1100

@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ThreeAndTwo/bigfloat"
+	"github.com/CoinSummer/bigfloat"
 )
 
 func TestExp(t *testing.T) {

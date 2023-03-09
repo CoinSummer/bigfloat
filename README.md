@@ -7,7 +7,7 @@ Package bigfloat provides the implementation of a few additional operations (squ
 #### Install
 
 ```
-go get github.com/ALTree/bigfloat
+go get github.com/CoinSummer/bigfloat
 ```
 
 Please note that `bigfloat` requires Go >= 1.5 (since the `big.Float` type is not available in previous versions). 
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ALTree/bigfloat"
+	"github.com/CoinSummer/bigfloat"
 )
 
 // In this example, we'll compute the value of the
